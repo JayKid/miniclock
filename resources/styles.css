@@ -1,0 +1,35 @@
+.background {
+  viewport-fill: black;
+}
+
+text {
+  font-size: 100;
+  font-family: Colfax-Bold;
+  text-length: 1;
+  text-anchor: middle;
+  y: 50%+30;
+  width: 20%;
+}
+
+#hours1 {
+  x: 20%;
+  fill: fb-lime;
+}
+
+#hours2 {
+  x: $+15;
+  fill: fb-cerulean;
+}
+
+#separator {
+  x: $+10;
+  fill: fb-yellow;
+}
+#minutes1 {
+  x: $+10;
+  fill: fb-pink;
+}
+#minutes2 {
+  x: $+20;
+  fill: fb-orange;
+}

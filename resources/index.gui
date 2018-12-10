@@ -1,0 +1,7 @@
+<svg class="background">
+  <text id="hours1" />
+  <text id="hours2" />
+  <text id="separator">:</text>
+  <text id="minutes1" />
+  <text id="minutes2" />
+</svg>
