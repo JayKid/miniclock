@@ -2,7 +2,7 @@
   viewport-fill: black;
 }
 
-text {
+text.clock {
   font-size: 100;
   font-family: Colfax-Bold;
   text-length: 1;
@@ -23,7 +23,7 @@ text {
 
 #separator {
   x: $+10;
-  fill: fb-yellow;
+  fill: lightseagreen;
 }
 #minutes1 {
   x: $+10;
@@ -32,4 +32,14 @@ text {
 #minutes2 {
   x: $+20;
   fill: fb-orange;
+}
+
+#additionalInfo { 
+  text-anchor: middle;
+  x: 50%;
+  y: 80%;
+  text-length: 10;
+  fill: fb-pink;
+  font-family: Colfax-Regular;
+  font-size: 60;
 }

@@ -12,7 +12,7 @@
     "appDisplayName": "Miniclock",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "requestedPermissions": ["access_activity", "access_heart_rate"],
     "buildTargets": [
       "meson"
     ],

@@ -1,7 +1,10 @@
-<svg class="background">
-  <text id="hours1" />
-  <text id="hours2" />
-  <text id="separator">:</text>
-  <text id="minutes1" />
-  <text id="minutes2" />
+<svg id="screen" pointer-events="visible" class="background">
+  <g id="clock-group">
+    <text class="clock" id="hours1" />
+    <text class="clock" id="hours2" />
+    <text class="clock" id="separator">:</text>
+    <text class="clock" id="minutes1" />
+    <text class="clock" id="minutes2" />
+  </g>
+  <text id="additionalInfo"/>
 </svg>
