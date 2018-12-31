@@ -19,6 +19,7 @@ let hrm = new HeartRateSensor();
 let additionalInfoIndex = 0;
 
 const getSteps = _ => `${today.local.steps || 0} steps`,
+const getDate = _ => `${new Date().toDateString().replace(/\-/g,'/')}`,
 const getBatteryLevel = _ => `${Math.floor(battery.chargeLevel)}%`;
 const getCalories = _ => `${today.local.calories} cal`;
 const getDistance = _ => `${today.local.distance} m`;
@@ -44,6 +45,7 @@ const additionalInfoHandlers = [
         clockGroup.groupTransform.translate.y = -40;
         return getBatteryLevel()
     },
+    _ => getDate(),
     _ => getSteps(),
     _ => getDistance(),
     _ => getCalories(),
