@@ -1,5 +1,6 @@
 import clock from "clock";
 import document from "document";
+import { display } from "display";
 import { today } from "user-activity";
 import { battery } from "power";
 import { HeartRateSensor } from "heart-rate";
@@ -75,4 +76,14 @@ clock.ontick = evt => {
     minutes2.text = minutes[1];
 
     additionalInfo.text = getAdditionalInfo();
+}
+
+// Reset watch to "simple view" (without additional info) when screen goes off
+display.onchange = function() {
+  if (!display.on) {
+    if (additionalInfoIndex !== 0) {
+        additionalInfoIndex = 0;
+        refreshAdditionalInfo();
+    }
+  }
 }
